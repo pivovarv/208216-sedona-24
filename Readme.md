@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виталий Пивовар](https://up.htmlacademy.ru/htmlcss/24/user/208216).
-* Наставник: [Ярослав Макаренко](https://htmlacademy.ru/profile/id234926).
+* Наставник: [Ярослав Наставник Макаренко](https://htmlacademy.ru/profile/id234926).
 
 ---
 
