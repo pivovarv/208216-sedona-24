@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
+      <a href="index.html" class="main-header-logo">
+        <img  src="img/logo.svg" width="50" height="50" alt="Логотип Седона">
+      </a>
       <nav class="main-navigation">
-        <a>
-          <img class="main-header-logo" src="img/logo.svg" width="50" height="50" alt="Логотип Седона">
-        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photos-videos.html">Фото и видео</a></li>
@@ -22,68 +22,64 @@
       <section class="catalog">
         <h1 class="visually-hidden">Каталог отелей</h1>
         <!--form-->
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h2>
-              <a href="#">Amara resort & SPA</a>
-            </h2>
-            <p class="catalog-item-price">
-              <span class="catalog-category">Гостиница</span>
-              <span class="item-price">От 4000 Р</span>
-            </p>
-            <p class="catalog-item-buttons">
-              <a class="button blue-button" href="#">Подробнее</a>
-              <a class="button brown-button" href="#">Забронировать</a>
-            </p>
-            <p class="catalog-item-image">
-              <img src="#" width="50" height="50" alt="Гостиница Amara resort & SPA">
-            </p>
-            <p class="catalog-item-rating">
-              <img src="#" width="5" height="5" alt="4 звезды">
-              <span>Рейтинг:8,5</span>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h2>
-              <a href="#">Desert Quail Inn</a>
-            </h2>
-            <p class="catalog-item-price">
-              <span class="catalog-category">Мотель</span>
-              <span class="item-price">От 3000 Р</span>
-            </p>
-            <p class="catalog-item-buttons">
-              <a class="button blue-button" href="#">Подробнее</a>
-              <a class="button brown-button" href="#">Забронировать</a>
-            </p>
-            <p class="catalog-item-image">
-              <img src="#" width="50" height="50" alt="Мотель Desert Quail Inn">
-            </p>
-            <p class="catalog-item-rating">
-              <img src="#" width="5" height="5" alt="3 звезды">
-              <span>Рейтинг:8,9</span>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h2>
-              <a href="#">Villas At Poco Diablo</a>
-            </h2>
-            <p class="catalog-item-price">
-              <span class="catalog-category">Апартаменты</span>
-              <span class="item-price">От 2000 Р</span>
-            </p>
-            <p class="catalog-item-buttons">
-              <a class="button blue-button" href="#">Подробнее</a>
-              <a class="button brown-button" href="#">Забронировать</a>
-            </p>
-            <p class="catalog-item-image">
-              <img src="#" width="50" height="50" alt="Апартаменты Villas At Poco Diablo">
-            </p>
-            <p class="catalog-item-rating">
-              <img src="#" width="5" height="5" alt="2 звезды">
-              <span>Рейтинг:9,2</span>
-            </p>
-          </li>
-        </ul>
+        <div>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h2>
+                <a href="#">Amara resort & SPA</a>
+              </h2>
+              <p class="catalog-item-price">
+                <span class="catalog-category">Гостиница</span>
+                <span class="item-price">От 4000 Р</span>
+              </p>
+              <p class="catalog-item-buttons">
+                <a class="button blue-button" href="#">Подробнее</a>
+                <a class="button brown-button" href="#">Забронировать</a>
+              </p>
+              <p class="catalog-item-image">
+                <img src="#" width="50" height="50" alt="Гостиница Amara resort & SPA">
+              </p>
+              <div class="star-rating"></div>
+              <div class="number-rating">Рейтинг:8,5</div>
+            </li>
+            <li class="catalog-item">
+              <h2>
+                <a href="#">Desert Quail Inn</a>
+              </h2>
+              <p class="catalog-item-price">
+                <span class="catalog-category">Мотель</span>
+                <span class="item-price">От 3000 Р</span>
+              </p>
+              <p class="catalog-item-buttons">
+                <a class="button blue-button" href="#">Подробнее</a>
+                <a class="button brown-button" href="#">Забронировать</a>
+              </p>
+              <p class="catalog-item-image">
+                <img src="#" width="50" height="50" alt="Мотель Desert Quail Inn">
+              </p>
+              <div class="star-rating"></div>
+              <div class="number-rating">Рейтинг:8,9</div>
+            </li>
+            <li class="catalog-item">
+              <h2>
+                <a href="#">Villas At Poco Diablo</a>
+              </h2>
+              <p class="catalog-item-price">
+                <span class="catalog-category">Апартаменты</span>
+                <span class="item-price">От 2000 Р</span>
+              </p>
+              <p class="catalog-item-buttons">
+                <a class="button blue-button" href="#">Подробнее</a>
+                <a class="button brown-button" href="#">Забронировать</a>
+              </p>
+              <p class="catalog-item-image">
+                <img src="#" width="50" height="50" alt="Апартаменты Villas At Poco Diablo">
+              </p>
+              <div class="star-rating"></div>
+              <div class="number-rating">Рейтинг:9,2</div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
