@@ -29,7 +29,40 @@
     <main>
       <h1 class="visually-hidden">Каталог отелей</h1>
       <section class="catalog">
-        <!--form-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" name="pool" type="checkbox" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" name="parking" type="checkbox" id="filter-parking">
+                <label for="filter-pool">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" name="wi-fi" type="checkbox" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-fi</label>
+              </li>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" name="hotel" type="checkbox" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" name="motel" type="checkbox" id="filter-motel" checked>
+                <label for="filter-pool">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" name="apartments" type="checkbox" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+          </fieldset>
+        </form>
         <div class="catalog-list">
           <ul>
             <li class="catalog-item">
