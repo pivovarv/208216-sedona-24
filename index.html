@@ -21,6 +21,7 @@
     <main>
       <h1 class="visually-hidden">Седона</h1>
       <secion class="intro">
+        <h2 class="visually-hidden">Приветствие</h2>
         <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona «Because the Grand Canyon sucks!» ">
         <img src="img/intro-mask.svg" width="1201" height="59" alt="">   
       </secion>
@@ -33,12 +34,33 @@
         </p>
         <!--здесь много кода-->
       </section>
-      <section class="offers">
-       <h2>Заинтересовались?</h2>
-         <p>
-          Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне
-         </p>
+      <section class="search">
+       <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <form class="search-form" method="post" acion="https://echo.htmlacademy.ru">
+          <h3>Поиск гостиницы в Седоне</h3>
+          <p class="search-item">
+            <label for="arrival-date-form">Дата заезда:</label>
+            <input type="text" name="arrival-date" Value="24 апреля 2017" id="arrival-date-form">
+          </p>
+          <p class="search-item">
+            <label for="departure-date-form">Дата выезда:</label>
+            <input type="text" name="departure-date" Value="4 июля 2017" id="departure-date-form">
+          </p>
+          <p class="search-item">
+            <label for="adults-form">Взрослые:</label>
+            <input type="number" name="adults" value="2" id="adults-form">
+          </p>
+          <p class="search-item">
+            <label for="children-form">Дети:</label>
+            <input type="number" name="children" value="0" id="children-form">
+          </p>
+          <p class="search-item">
+            <button class="button search-button" type="submit" value="Найти">Найти</button>
+          </p>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
@@ -46,13 +68,13 @@
         <span>#visitsedona</span>
       </p>
       <ul class="footer-socials">
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фэйсбук</a></li>
-        <li><a class="social-button" href="#">Ютюб</a></li>
+        <li><a class="button social-button" href="#">Твиттер</a></li>
+        <li><a class="button social-button" href="#">Фэйсбук</a></li>
+        <li><a class="button social-button" href="#">Ютюб</a></li>
       </ul>
       <p class="footer-copyright">
         <span>website by</span>
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Лого "HTML Academy""></a>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Лого HTML Academy"></a>
       </p>
     </footer> 
   </body>
