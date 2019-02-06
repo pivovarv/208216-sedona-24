@@ -28,7 +28,8 @@
     </header>
     <main>
       <h1 class="visually-hidden">Каталог отелей</h1>
-      <section class="catalog">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр отелей</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -64,66 +65,97 @@
               </li>
             </ul>
           </fieldset>
+          <div class="range-option">
+            <p>Стоимость в сутки (Р):</p>
+            <p>
+              <span>от 0</span>
+              <span>до 3000</span>
+            </p>
+            <p>
+              <input class="range-input" type="range" min="0" max="1500">
+            </p>
+            <p>
+              <button class="button range-button" value="Показать">Показать</button>
+            </p>
+          </div>
         </form>
-        <div class="catalog-list">
-          <ul>
-            <li class="catalog-item">
-              <a href="#">
-                <h2>Amara resort & SPA</h2>
-                <p class="catalog-item-image">
-                  <img src="img/hotel-photo-1.jpg" width="135" height="90" alt="Гостиница Amara resort & SPA">
-                </p>
-              </a>
-              <p class="catalog-item-price">
-                <span class="catalog-category">Гостиница</span>
-                <span class="item-price">От 4000 Р</span>
+      </section>
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка отелей</h2>
+        <b>Найдено:3</b>
+        <p>Сортировка:</p>
+        <ul class="sorting-list">
+          <li class="sorting-item">
+            <button class="sorting-button sorting-button-price">По цене</button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button sorting-button-type">По типу</button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button sorting-button-rating">По рейтингу</button>
+          </li>
+        </ul>
+        <input class="sorting-input sorting-input-up" type="image" src="img/icon-up-dir.svg" alt="Кнопка Вверх">
+        <input class="sorting-input sorting-input-down" type="image" src="img/icon-down-dir.svg" alt="Кнопка Вниз">
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список отелей</h2>
+        <ul>
+          <li class="catalog-item">
+            <a href="#">
+              <h2>Amara resort & SPA</h2>
+              <p class="catalog-item-image">
+                <img src="img/hotel-photo-1.jpg" width="135" height="90" alt="Гостиница Amara resort & SPA">
               </p>
-              <p class="catalog-item-buttons">
-                <a class="button blue-button" href="#">Подробнее</a>
-                <a class="button brown-button" href="#">Забронировать</a>
+            </a>
+            <p class="catalog-item-price">
+              <span class="catalog-category">Гостиница</span>
+              <span class="item-price">От 4000 Р</span>
+            </p>
+            <p class="catalog-item-buttons">
+              <a class="button blue-button" href="#">Подробнее</a>
+              <a class="button brown-button" href="#">Забронировать</a>
+            </p>
+            <div class="star-rating"></div>
+            <div class="number-rating">Рейтинг:8,5</div>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <h2>Desert Quail Inn</h2>
+              <p class="catalog-item-image">
+                <img src="img/hotel-photo-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
               </p>
-              <div class="star-rating"></div>
-              <div class="number-rating">Рейтинг:8,5</div>
-            </li>
-            <li class="catalog-item">
-              <a href="#">
-                <h2>Desert Quail Inn</h2>
-                <p class="catalog-item-image">
-                  <img src="img/hotel-photo-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-                </p>
-              </a>
-              <p class="catalog-item-price">
-                <span class="catalog-category">Мотель</span>
-                <span class="item-price">От 3000 Р</span>
-              </p>
-              <p class="catalog-item-buttons">
-                <a class="button blue-button" href="#">Подробнее</a>
-                <a class="button brown-button" href="#">Забронировать</a>
-              </p>
-              
-              <div class="star-rating"></div>
-              <div class="number-rating">Рейтинг:8,9</div>
-            </li>
-            <li class="catalog-item">
-              <a href="#">
-                <h2>Villas At Poco Diablo</h2>
-                <p class="catalog-item-image">
-                  <img src="img/hotel-photo-3.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo">
-              </p>
-              </a>
-              <p class="catalog-item-price">
-                <span class="catalog-category">Апартаменты</span>
-                <span class="item-price">От 2000 Р</span>
-              </p>
-              <p class="catalog-item-buttons">
-                <a class="button blue-button" href="#">Подробнее</a>
-                <a class="button brown-button" href="#">Забронировать</a>
-              </p> 
-              <div class="star-rating"></div>
-              <div class="number-rating">Рейтинг:9,2</div>
-            </li>
-          </ul>
-        </div>
+            </a>
+            <p class="catalog-item-price">
+              <span class="catalog-category">Мотель</span>
+              <span class="item-price">От 3000 Р</span>
+            </p>
+            <p class="catalog-item-buttons">
+              <a class="button blue-button" href="#">Подробнее</a>
+              <a class="button brown-button" href="#">Забронировать</a>
+            </p>  
+            <div class="star-rating"></div>
+            <div class="number-rating">Рейтинг:8,9</div>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <h2>Villas At Poco Diablo</h2>
+              <p class="catalog-item-image">
+                <img src="img/hotel-photo-3.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo">
+            </p>
+            </a>
+            <p class="catalog-item-price">
+              <span class="catalog-category">Апартаменты</span>
+              <span class="item-price">От 2000 Р</span>
+            </p>
+            <p class="catalog-item-buttons">
+              <a class="button blue-button" href="#">Подробнее</a>
+              <a class="button brown-button" href="#">Забронировать</a>
+            </p> 
+            <div class="star-rating"></div>
+            <div class="number-rating">Рейтинг:9,2</div>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="main-footer">
