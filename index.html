@@ -91,7 +91,7 @@
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <p>
-          <button class="search-button" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
+          <button class="button search-button" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
         </p>
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">        
           <p class="search-item">
@@ -106,11 +106,15 @@
           </p>
           <p class="search-item">
             <label for="adults-form">Взрослые:</label>
+            <button class="controls controls-remove">-</button>
             <input class="search-item-number" type="number" name="adults" value="2" id="adults-form">
+            <button class="controls controls-add">+</button>
           </p>
           <p class="search-item">
             <label for="children-form">Дети:</label>
+            <button class="controls controls-remove">-</button>
             <input class="search-item-number" type="number" name="children" value="0" id="children-form">
+            <button class="controls controls-add">+</button>
           </p>
           <p class="search-item">
             <button class="button search-form-button" type="submit" value="Найти">Найти</button>
