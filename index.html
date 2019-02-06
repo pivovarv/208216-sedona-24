@@ -90,26 +90,30 @@
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-          <h3>Поиск гостиницы в Седоне</h3>
+        <p>
+          <button class="search-button" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
+        </p>
+        <form class="search-form" method="post" action="https://echo.htmlacademy.ru">        
           <p class="search-item">
             <label for="arrival-date-form">Дата заезда:</label>
-            <input type="text" name="arrival-date" Value="24 апреля 2017" id="arrival-date-form">
+            <input class="search-item-text" type="text" name="arrival-date" Value="24 апреля 2017" id="arrival-date-form">
+            <input class="search-item-image" type="image" name="calendar" src="img/calendar.svg" value="Календарь" alt="Календарь">
           </p>
           <p class="search-item">
             <label for="departure-date-form">Дата выезда:</label>
-            <input type="text" name="departure-date" Value="4 июля 2017" id="departure-date-form">
+            <input class="search-item-text" type="text" name="departure-date" Value="4 июля 2017" id="departure-date-form">
+            <input class="search-item-image" type="image" name="calendar" src="img/calendar.svg" value="Календарь" alt="Календарь">
           </p>
           <p class="search-item">
             <label for="adults-form">Взрослые:</label>
-            <input type="number" name="adults" value="2" id="adults-form">
+            <input class="search-item-number" type="number" name="adults" value="2" id="adults-form">
           </p>
           <p class="search-item">
             <label for="children-form">Дети:</label>
-            <input type="number" name="children" value="0" id="children-form">
+            <input class="search-item-number" type="number" name="children" value="0" id="children-form">
           </p>
           <p class="search-item">
-            <button class="button search-button" type="submit" value="Найти">Найти</button>
+            <button class="button search-form-button" type="submit" value="Найти">Найти</button>
           </p>
         </form>
       </section>
