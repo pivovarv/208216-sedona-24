@@ -66,16 +66,19 @@
             </ul>
           </fieldset>
           <div class="range-option">
-            <p>Стоимость в сутки (Р):</p>
+            <label>Стоимость в сутки (Р):
+              <span>от</span>
+              <input type="number" name="range-option-input" placeholder="" value="0">
+              <span>до</span>
+              <input type="number" name="range-option-input" placeholder="" value="3000">
+            </label>
+            <div>
+              <div class="line"></div>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
             <p>
-              <span>от 0</span>
-              <span>до 3000</span>
-            </p>
-            <p>
-              <input class="range-input" type="range" min="0" max="1500">
-            </p>
-            <p>
-              <button class="button range-button" value="Показать">Показать</button>
+              <button type="submit" class="button range-button">Показать</button>
             </p>
           </div>
         </form>
